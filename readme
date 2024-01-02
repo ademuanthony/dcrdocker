@@ -1,0 +1,8 @@
+### Build the docker image
+```docker build -t dcrdocker .```
+
+### Run the image
+```docker run --name dcrdockercontainer -v $(pwd)/data:/data dcrdocker```
+Replace `$(pwd)/data` with the path to your desired dir
+
+docker run --name dcrdockercontainer -v $(pwd)/data:/data dcrdocker
